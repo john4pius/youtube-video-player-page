@@ -291,7 +291,36 @@ Video
 
 video {
     display: flex;
-    width: 100%;
+    width: 92%;
     height: 700px;
     margin-left: 100px;
+}
+
+/* iframe{
+    width: 100%;
+    height: 700px;
+    frameborder: 10px;
+} */
+
+.col-right-image-thumbnail {
+    width: 250px;
+    height: 120px;
+    padding-right: 10px;
+}
+
+article {
+        display: inline-flex;
+        margin: 10px 2px 0px 2px;
+}
+article div {
+    padding-left: -5px;
+}
+
+#thumbnail_video_name {
+    font-weight: bold;
+    font-family:Verdana;
+}
+
+#thumbnail_video_channel {
+    color:#808080;
 }
