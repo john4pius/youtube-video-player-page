@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hclearfix,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hclearfix,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*
+===============================================
+Custom styling starts here
+===============================================
+*/
+
+
+/*
+===============================================
+header
+===============================================
+*/
+
+header {
+    padding-top: 10px;
+}
+
+#header-left {
+    display: flex;
+    align-items: center;
+}
+
+#header-center {
+    display: block;
+    max-width: 728px;
+}
+
+#header-right {
+    display: inline-block;
+}
+
+
+/*
+===============================================
+Grids
+===============================================
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container,
+.grid {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-left,
+.col-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grid,
+.col-left,
+.col-right {
+    padding: 10px;
+}
+
+.col-left {
+    width: 70.66%;
+}
+
+.col-right {
+    width: 28.33%;
+}
+
+.grid {
+    background-color: #eeeeee;
+}
+
+
+/*
+===============================================
+Header
+===============================================
+*/
+
+#style-mytm-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+#left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+img {
+    padding-right: 45px;
+}
+
+#youtubesearch {
+    width: 600px;
+    height: 30px;
+}
+
+button {
+    height: 30px;
+}
+
+#search-button {
+    background-image: url('https://archive.vn/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');
+    font-size: 100%;
+    display: block;
+    opacity: 0.6;
+    text-indent: -10000px;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
+    background-position: -28px -66px;
+    background-repeat: no-repeat;
+    border-width: medium;
+    border-style: none;
+    margin: 0px 25px;
+    padding: 0px;
+    border-color: white;
+}
+
+
+/*
+===============================================
+Video
+===============================================
+*/
+
+video {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    margin-left: 100px;
+}
