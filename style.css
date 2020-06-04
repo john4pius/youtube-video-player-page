@@ -151,31 +151,6 @@ Custom styling starts here
 
 /*
 ===============================================
-header
-===============================================
-*/
-
-header {
-    padding-top: 10px;
-}
-
-#header-left {
-    display: flex;
-    align-items: center;
-}
-
-#header-center {
-    display: block;
-    max-width: 728px;
-}
-
-#header-right {
-    display: inline-block;
-}
-
-
-/*
-===============================================
 Grids
 ===============================================
 */
@@ -195,8 +170,7 @@ Grids
 }
 
 .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
 
 .col-left,
@@ -230,43 +204,52 @@ Header
 ===============================================
 */
 
-#style-mytm-header {
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding-right: 35px;
+}
+
+.navbar {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+}
+
+.left-bar {
+    grid-column: 1 / 1;
+    justify-self: start;
+}
+
+.header-nav {
+    grid-column: 2 / 2;
+    justify-self: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    height: 50px;
 }
 
-#left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#right {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-img {
-    padding-right: 45px;
+.right-bar {
+    grid-column: 3 / 3;
+    justify-self: end;
 }
 
 #youtubesearch {
     width: 600px;
-    height: 30px;
+    height: 35px;
+}
+
+::placeholder {
+    font-size: 20px;
+    padding-left: 3px;
 }
 
 button {
-    height: 30px;
+    height: 35px;
+    margin-left: -5px;
 }
 
 #search-button {
@@ -352,16 +335,15 @@ article div {
 #like-button {
     box-sizing: border-box;
     float: right;
-/*     width:5%;  
+    /*     width:5%;  
     height:5%; */
     padding-right: 400px;
-
 }
 
 #dislike-button {
     box-sizing: border-box;
     float: right;
-/*     width:5%;  
+    /*     width:5%;  
     height:5%; */
     padding-left: 100px;
 }
@@ -369,7 +351,6 @@ article div {
 #share-button {
     box-sizing: border-box;
     float: right;
-/*     width:5%;  
+    /*     width:5%;  
     height:5%; */
-
 }
