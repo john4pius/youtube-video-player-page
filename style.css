@@ -278,13 +278,6 @@ Video
 ===============================================
 */
 
-
-/* video {
-    display: flex;
-    width: 100%;
-    height: auto;
-} */
-
 #video-title {
     font-size: 26px;
     padding-top: 10px;
@@ -332,40 +325,12 @@ article div {
     text-align: right;
 }
 
-/* #like-button {
-/*     box-sizing: border-box;
-    float: right;
-    width:5%;  
-    height:5%; 
-    padding-right: 400px;
-
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#dislike-button {
-    box-sizing: border-box;
-    float: right;
-    /*     width:5%;  
-    height:5%; 
-    padding-left: 100px;
-}
-
-#share-button {
-    box-sizing: border-box;
-    float: right;
-    /*     width:5%;  
-    height:5%; 
-} */
-
-
 .fa {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.right{
-    /* float: right; */
+.right {
     padding-left: 900px;
 }
 
@@ -382,26 +347,23 @@ article div {
 .subscribe .right {
     padding: 0px 0px 0px 1150px;
     margin-top: 20px;
-    /*padding-left: 1000px; */
 }
 
-.subscribenow {  
-    width: 90pt ;
+.subscribenow {
+    width: 90pt;
     height: 25pt;
     background: red;
     color: white;
     text-transform: uppercase;
     font-weight: 5500;
-
 }
 
-#poster-button{
+#poster-button {
     border-radius: 50%;
 }
 
-#poster-name{
+#poster-name {
     font-size: bold;
     font-weight: 900;
     padding-bottom: 400px;
-    /* text-align: center; */
 }
