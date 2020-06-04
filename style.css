@@ -212,11 +212,11 @@ Grids
 }
 
 .col-left {
-    width: 70.66%;
+    width: 75.66%;
 }
 
 .col-right {
-    width: 28.33%;
+    width: 23.33%;
 }
 
 .grid {
@@ -302,7 +302,7 @@ Video
     height: auto;
 } */
 
-p {
+#video-title {
     font-size: 26px;
     padding-top: 10px;
 }
@@ -324,6 +324,7 @@ article {
 
 article div {
     padding-left: -5px;
+    justify-content: flex-start;
 }
 
 #thumbnail_video_name {
@@ -333,4 +334,17 @@ article div {
 
 #thumbnail_video_channel {
     color: #808080;
+}
+
+#style-mytm-sec2 {
+    display: flexbox;
+    margin-left: 5px;
+}
+
+#up-next {
+    text-align: left;
+}
+
+#auto-play {
+    text-align: right;
 }
