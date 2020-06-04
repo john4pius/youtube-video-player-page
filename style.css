@@ -295,10 +295,20 @@ Video
 ===============================================
 */
 
-video {
+
+/* video {
     display: flex;
     width: 100%;
     height: auto;
+} */
+
+p {
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+h3 {
+    padding-top: 5px;
 }
 
 .col-right-image-thumbnail {
