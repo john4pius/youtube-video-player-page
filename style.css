@@ -303,13 +303,17 @@ article div {
     justify-content: flex-start;
 }
 
-#thumbnail_video_name {
+.thumbnail_video_name {
     font-weight: bold;
     font-family: Verdana;
+    font-size: 16px;
+    text-align: start;
 }
 
-#thumbnail_video_channel {
+.thumbnail_video_channel {
     color: #808080;
+    font-size: 12px;
+    text-align: start;
 }
 
 #style-mytm-sec2 {
