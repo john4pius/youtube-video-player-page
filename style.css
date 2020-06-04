@@ -142,6 +142,12 @@ Custom styling starts here
 ===============================================
 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 /*
 ===============================================
@@ -291,16 +297,9 @@ Video
 
 video {
     display: flex;
-    width: 92%;
-    height: 700px;
-    margin-left: 100px;
-}
-
-/* iframe{
     width: 100%;
-    height: 700px;
-    frameborder: 10px;
-} */
+    height: auto;
+}
 
 .col-right-image-thumbnail {
     width: 250px;
@@ -309,18 +308,19 @@ video {
 }
 
 article {
-        display: inline-flex;
-        margin: 10px 2px 0px 2px;
+    display: inline-flex;
+    margin: 10px 2px 0px 2px;
 }
+
 article div {
     padding-left: -5px;
 }
 
 #thumbnail_video_name {
     font-weight: bold;
-    font-family:Verdana;
+    font-family: Verdana;
 }
 
 #thumbnail_video_channel {
-    color:#808080;
+    color: #808080;
 }
