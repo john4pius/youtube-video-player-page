@@ -72,6 +72,7 @@ figure,
 figcaption,
 footer,
 header,
+hclearfix,
 menu,
 nav,
 output,
@@ -100,6 +101,7 @@ figcaption,
 figure,
 footer,
 header,
+hclearfix,
 menu,
 nav,
 section {
@@ -120,10 +122,10 @@ q {
     quotes: none;
 }
 
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -154,8 +156,8 @@ Grids
 */
 
 *,
-*::before,
-*::after {
+*:before,
+*:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -168,24 +170,24 @@ Grids
 }
 
 .container {
-    padding: 10;
+    padding: 10px;
 }
 
 .col-left,
 .col-right {
     display: inline-block;
     vertical-align: top;
-    padding-top: 20;
+    padding-top: 20px;
 }
 
 .col-left {
     width: 65.66%;
-    padding-left: 100;
+    padding-left: 100px;
 }
 
 .col-right {
     width: 33.33%;
-    padding-right: 100;
+    padding-right: 100px;
 }
 
 .grid {
@@ -211,7 +213,7 @@ li {
 .navbar {
     grid-row: 1;
     display: grid;
-    grid-template-columns: 300 auto 300;
+    grid-template-columns: 300px auto 300px;
 }
 
 .left-bar {
@@ -233,12 +235,12 @@ li {
 }
 
 #youtubesearch {
-    width: 600;
+    width: 600px;
     height: 35px;
 }
 
  ::placeholder {
-    font-size: 20;
+    font-size: 20px;
     padding-left: 3px;
 }
 
@@ -252,7 +254,7 @@ li {
     font-size: 100%;
     display: block;
     opacity: 0.6;
-    text-indent: -10000;
+    text-indent: -10000px;
     background-color: transparent;
     width: 15px;
     height: 15px;
@@ -261,8 +263,8 @@ li {
     background-repeat: no-repeat;
     border-width: medium;
     border-style: none;
-    margin: 0 25px;
-    padding: 0;
+    margin: 0px 25px;
+    padding: 0px;
     border-color: white;
 }
 
@@ -275,7 +277,7 @@ Video
 
 #video-title {
     font-size: 26px;
-    padding-top: 10;
+    padding-top: 10px;
 }
 
 h3 {
@@ -290,14 +292,14 @@ thumbnail
 */
 
 .col-right-image-thumbnail {
-    width: 250;
-    height: 120;
-    padding-right: 10;
+    width: 250px;
+    height: 120px;
+    padding-right: 10px;
 }
 
 article {
     display: inline-flex;
-    margin: 10 2px 0 2px;
+    margin: 10px 2px 0px 2px;
 }
 
 article div {
@@ -307,8 +309,7 @@ article div {
 
 .thumbnail_video_name {
     font-weight: bold;
-    font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
-    font: Verdana;
+    font-family: Verdana;
     font-size: 16px;
     text-align: start;
 }
@@ -340,17 +341,17 @@ profile
 */
 
 .fa {
-    margin-left: 10;
-    margin-right: 10;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .right {
-    padding-left: 900;
+    padding-left: 900px;
 }
 
 .subscribe .right {
-    padding: 0 0 0 1150;
-    margin-top: 20;
+    padding: 0px 0px 0px 1150px;
+    margin-top: 20px;
 }
 
 .subscribenow {
@@ -364,7 +365,7 @@ profile
 
 #poster-picture {
     border-radius: 50%;
-    padding-top: 10;
+    padding-top: 10px;
 }
 
 .subscribe {
@@ -372,7 +373,7 @@ profile
 }
 
 .subscribe h3 {
-    margin-left: 50;
+    margin-left: 50px;
 }
 
 .subscribe span {
@@ -382,17 +383,17 @@ profile
 .profile-container {
     display: grid;
     grid-template-columns: 10% auto 13%;
-    padding: 10;
+    padding: 10px;
 }
 
 .profile-item {
-    font-size: 20;
+    font-size: 20px;
     text-align: left;
-    padding: 0;
+    padding: 0px;
 }
 
 h6,
 p {
+    padding-top: 10px;
     font-size: medium;
-    padding-top: 10;
 }
