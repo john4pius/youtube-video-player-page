@@ -177,20 +177,17 @@ Grids
 .col-right {
     display: inline-block;
     vertical-align: top;
-}
-
-.grid,
-.col-left,
-.col-right {
-    padding: 10px;
+    padding-top: 20px;
 }
 
 .col-left {
-    width: 75.66%;
+    width: 65.66%;
+    padding-left: 100px;
 }
 
 .col-right {
-    width: 23.33%;
+    width: 33.33%;
+    padding-right: 100px;
 }
 
 .grid {
@@ -242,12 +239,12 @@ li {
     height: 35px;
 }
 
-::placeholder {
+ ::placeholder {
     font-size: 20px;
     padding-left: 3px;
 }
 
-button {
+.search-bar {
     height: 35px;
     margin-left: -5px;
 }
@@ -286,6 +283,13 @@ Video
 h3 {
     padding-top: 5px;
 }
+
+
+/*
+===============================================
+thumbnail
+===============================================
+*/
 
 .col-right-image-thumbnail {
     width: 250px;
@@ -329,6 +333,13 @@ article div {
     text-align: right;
 }
 
+
+/*
+===============================================
+profile
+===============================================
+*/
+
 .fa {
     margin-left: 10px;
     margin-right: 10px;
@@ -336,16 +347,6 @@ article div {
 
 .right {
     padding-left: 900px;
-}
-
-.subscribe {
-    position: relative;
-    margin-right: 50px;
-}
-
-.subscribe span {
-    margin-right: 50%;
-    padding-left: 1000px;
 }
 
 .subscribe .right {
@@ -362,12 +363,38 @@ article div {
     font-weight: 5500;
 }
 
-#poster-button {
+#poster-picture {
     border-radius: 50%;
+    padding-top: 10px;
 }
 
-#poster-name {
-    font-size: bold;
-    font-weight: 900;
-    padding-bottom: 400px;
+.subscribe {
+    position: relative;
+}
+
+.subscribe h3 {
+    margin-left: 50px;
+}
+
+.subscribe span {
+    margin-left: 0%;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 10% auto 13%;
+    padding: 10px;
+}
+
+.profile-item {
+    font-size: 20px;
+    text-align: left;
+    padding: 0px;
+}
+
+h6,
+p {
+    padding-top: 10px;
+    font-size: medium;
+    padding-top: 10px;
 }
