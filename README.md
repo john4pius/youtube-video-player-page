@@ -3,7 +3,7 @@
 > This project centers on the use of plain HTML and CSS to embed images and videos in a web page.
 > A reproduction of a youtube home page was used to complete the project
 
-![screenshot](./images/Youtube_Basic_Cloning.PNG)
+![screenshot](./images/Youtube_Basic_Cloning.png)
 
 ## Built With
 
