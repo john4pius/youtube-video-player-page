@@ -134,12 +134,12 @@ article div {
 
 #style-head-next {
     float: left;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 #style-head-auto {
     float: right;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 
@@ -169,6 +169,19 @@ Video
     float: right;
 }
 
+.video-discribe {
+    padding-left: 50px;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+
+/*
+===============================================
+Account profile
+===============================================
+*/
+
 .subscribenow {
     width: 90pt;
     height: 25pt;
@@ -178,15 +191,27 @@ Video
     font-weight: 5500;
 }
 
+.profile-container {
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
 #poster-picture {
     border-radius: 50%;
     padding-top: 10px;
 }
 
-.profile-container {
-    display: grid;
-    grid-template-columns: 10% auto 30%;
-    padding: 10px;
+.profile-comment {
+    padding: 15px;
+    font-size: 12px;
+}
+
+.profile {
+    float: left;
+}
+
+.subscribe-btn {
+    float: right;
 }
 
 .thumbnail_video_name,
