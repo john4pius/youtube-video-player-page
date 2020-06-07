@@ -1,384 +1,230 @@
-    /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
-  License: none (public domain)
-*/
-    
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hclearfix,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hclearfix,
-    menu,
-    nav,
-    section {
-        display: block;
-    }
-    
-    body {
-        line-height: 1;
-    }
-    
-    ol,
-    ul {
-        list-style: none;
-    }
-    
-    blockquote,
-    q {
-        quotes: none;
-    }
-    
-    blockquote:before,
-    blockquote:after,
-    q:before,
-    q:after {
-        content: '';
-        content: none;
-    }
-    
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-    /*
-===============================================
-Custom styling starts here
-===============================================
-*/
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    /*
-===============================================
-Grids
-===============================================
-*/
-    
-    *,
-    *:before,
-    *:after {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    
-    .container,
-    .grid {
-        margin: 0 auto;
-        width: 100%;
-    }
-    
-    .container {
-        padding: 10px;
-    }
-    
-    .col-left,
-    .col-right {
-        display: inline-block;
-        vertical-align: top;
-        padding-top: 20px;
-    }
-    
-    .col-left {
-        width: 65.66%;
-        padding-left: 100px;
-    }
-    
-    .col-right {
-        width: 33.33%;
-        padding-right: 100px;
-    }
-    
-    .grid {
-        background-color: #eeeeee;
-    }
-    /*
-===============================================
-Header
-===============================================
-*/
-    
-    ul {
-        list-style-type: none;
-    }
-    
-    li {
-        display: inline;
-        padding-right: 35px;
-    }
-    
-    .navbar {
-        grid-row: 1;
-        display: grid;
-        grid-template-columns: 300px auto 300px;
-    }
-    
-    .left-bar {
-        grid-column: 1 / 1;
-        justify-self: start;
-    }
-    
-    .header-nav {
-        grid-column: 2 / 2;
-        justify-self: center;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    
-    .right-bar {
-        grid-column: 3 / 3;
-        justify-self: end;
-    }
-    
-    #youtubesearch {
-        width: 600px;
-        height: 35px;
-    }
-    
-     ::placeholder {
-        font-size: 20px;
-        padding-left: 3px;
-    }
-    
-    .search-bar {
-        height: 35px;
-        margin-left: -5px;
-    }
-    
-    #search-button {
-        background-image: url('https://archive.vn/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');
-        font-size: 100%;
-        display: block;
-        opacity: 0.6;
-        text-indent: -10000px;
-        background-color: transparent;
-        width: 15px;
-        height: 15px;
-        box-shadow: none;
-        background-position: -28px -66px;
-        background-repeat: no-repeat;
-        border-width: medium;
-        border-style: none;
-        margin: 0px 25px;
-        padding: 0px;
-        border-color: white;
-    }
-    /*
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style the body */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+
+/* Style the top navigation bar */
+
+.navbar {
+    display: inline-flexbox;
+}
+
+
+/* Style the navigation bar links */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding-right: 35px;
+}
+
+.navbar {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+}
+
+.left-bar {
+    grid-column: 1 / 1;
+    justify-self: start;
+}
+
+.header-nav {
+    grid-column: 2 / 2;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right-bar {
+    grid-column: 3 / 3;
+    justify-self: end;
+}
+
+#youtubesearch {
+    width: 600px;
+    height: 35px;
+}
+
+ ::placeholder {
+    font-size: 20px;
+    padding-left: 3px;
+}
+
+.search-bar {
+    height: 35px;
+    margin-left: -5px;
+}
+
+#search-button {
+    background-image: url('https://archive.vn/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');
+    font-size: 100%;
+    display: block;
+    opacity: 0.6;
+    text-indent: -10000px;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
+    background-position: -28px -66px;
+    background-repeat: no-repeat;
+    border-width: medium;
+    border-style: none;
+    margin: 0px 25px;
+    padding: 0px;
+    border-color: white;
+}
+
+
+/* Column container */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+/* Create two unequal columns that sits next to each other */
+
+.main {
+    flex: 65%;
+    padding: 20px;
+}
+
+.side {
+    flex: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.col-right-image-thumbnail {
+    width: 150px;
+    height: 100px;
+}
+
+article {
+    display: inline-flex;
+    margin: 10px 2px 0px 2px;
+}
+
+article div {
+    padding-left: 5px;
+}
+
+#style-head-thumb {
+    clear: both
+}
+
+#style-head-next {
+    float: left;
+    font-size: 14px;
+}
+
+#style-head-auto {
+    float: right;
+    font-size: 14px;
+}
+
+
+/*
 ===============================================
 Video
 ===============================================
 */
-    
-    #video-title {
-        font-size: 26px;
-        padding-top: 10px;
-    }
-    
-    h3 {
-        padding-top: 5px;
-    }
-    /*
+
+#style-mtm-player {
+    height: 700px;
+    width: 100%;
+    border: 0px;
+    position: relative;
+}
+
+#video-title {
+    font-size: 18px;
+}
+
+.fa {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.right {
+    float: right;
+}
+
+.video-discribe {
+    padding-left: 50px;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+
+/*
 ===============================================
-thumbnail
-===============================================
-*/
-    
-    .col-right-image-thumbnail {
-        width: 250px;
-        height: 120px;
-        padding-right: 10px;
-    }
-    
-    article {
-        display: inline-flex;
-        margin: 10px 2px 0px 2px;
-    }
-    
-    article div {
-        padding-left: -5px;
-        justify-content: flex-start;
-    }
-    
-    .thumbnail_video_name {
-        font-weight: bold;
-        font-family: Verdana;
-        font-size: 16px;
-        text-align: start;
-    }
-    
-    .thumbnail_video_channel {
-        color: #808080;
-        font-size: 12px;
-        text-align: start;
-    }
-    
-    #style-mytm-sec2 {
-        display: flexbox;
-        margin-left: 5px;
-    }
-    
-    #style-head-thumb {
-        clear: both
-    }
-    
-    #style-head-next {
-        float: left
-    }
-    
-    #style-head-auto {
-        float: right
-    }
-    
-    #style-mytm-video {
-        display: none
-    }
-    /*
-===============================================
-profile
+Account profile
 ===============================================
 */
-    
-    .fa {
-        margin-left: 10px;
-        margin-right: 10px;
+
+.subscribenow {
+    width: 90pt;
+    height: 25pt;
+    background: red;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 5500;
+}
+
+.profile-container {
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+#poster-picture {
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+.profile-comment {
+    padding: 15px;
+    font-size: 12px;
+}
+
+.profile {
+    float: left;
+}
+
+.subscribe-btn {
+    float: right;
+}
+
+.thumbnail_video_name,
+.thumbnail_video_channel {
+    font-size: 10px;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+    .row,
+    .navbar {
+        flex-direction: column;
     }
-    
-    .right {
-        padding-left: 600px;
-    }
-    
-    .subscribenow {
-        width: 90pt;
-        height: 25pt;
-        background: red;
-        color: white;
-        text-transform: uppercase;
-        font-weight: 5500;
-    }
-    
-    #poster-picture {
-        border-radius: 50%;
-        padding-top: 10px;
-    }
-    
-    .subscribe h3 {
-        margin-left: 50px;
-    }
-    
-    .subscribe span {
-        margin-left: 0%;
-    }
-    
-    .profile-container {
-        display: grid;
-        grid-template-columns: 10% auto 13%;
-        padding: 10px;
-    }
-    
-    .profile-item {
-        font-size: 20px;
-        text-align: left;
-        padding: 0px;
-    }
-    
-    h6,
-    p {
-        padding-top: 10px;
-        font-size: medium;
-    }
+}
