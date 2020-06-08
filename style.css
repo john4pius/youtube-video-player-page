@@ -3,7 +3,6 @@
 }
 
 
-/* Style the body */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -12,14 +11,12 @@ body {
 }
 
 
-/* Style the top navigation bar */
 
 .navbar {
     display: inline-flexbox;
 }
 
 
-/* Style the navigation bar links */
 
 ul {
     list-style-type: none;
@@ -89,7 +86,6 @@ li {
 }
 
 
-/* Column container */
 
 .row {
     display: flex;
@@ -100,7 +96,6 @@ li {
 }
 
 
-/* Create two unequal columns that sits next to each other */
 
 .main {
     flex: 65%;
@@ -142,13 +137,6 @@ article div {
     font-size: 14px;
 }
 
-
-/*
-===============================================
-Video
-===============================================
-*/
-
 #style-mtm-player {
     height: 700px;
     width: 100%;
@@ -174,13 +162,6 @@ Video
     padding-top: 15px;
     font-size: 16px;
 }
-
-
-/*
-===============================================
-Account profile
-===============================================
-*/
 
 .subscribenow {
     width: 90pt;
@@ -218,9 +199,6 @@ Account profile
 .thumbnail_video_channel {
     font-size: 10px;
 }
-
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 700px) {
     .row,
