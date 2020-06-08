@@ -15,13 +15,16 @@
 
 ## Authors
 
-👤 **John**
+👤 **John Pius**
 
 - Github (https://github.com/john4pius)
+- Linkedin (https://www.linkedin.com/in/john-pius-5447b353/)
+- Twitter (@John4pius)
 
-👤 **Ahmed**
+👤 **Ahmed Ben Jmii**
 
 * Ahmed (https://github.com/Ahmed-Benj)
+* Linkedin (https://www.linkedin.com/in/ahmed-b-05600992/)
 
 ## 🤝 Contributing
 
