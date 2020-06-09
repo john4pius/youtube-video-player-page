@@ -8,10 +8,6 @@ body {
   margin: 0;
 }
 
-.navbar {
-  display: inline-flexbox;
-}
-
 ul {
   list-style-type: none;
 }
@@ -50,7 +46,7 @@ li {
   height: 35px;
 }
 
- ::placeholder {
+::placeholder {
   font-size: 20px;
   padding-left: 3px;
 }
@@ -74,8 +70,8 @@ li {
   background-repeat: no-repeat;
   border-width: medium;
   border-style: none;
-  margin: 0px 25px;
-  padding: 0px;
+  margin: 0 25px;
+  padding: 0;
   border-color: white;
 }
 
@@ -106,7 +102,7 @@ li {
 
 article {
   display: inline-flex;
-  margin: 10px 2px 0px 2px;
+  margin: 10px 2px 0 2px;
 }
 
 article div {
@@ -114,7 +110,7 @@ article div {
 }
 
 .style-head-thumb {
-  clear: both
+  clear: both;
 }
 
 .style-head-next {
@@ -130,7 +126,7 @@ article div {
 .style-mtm-player {
   height: 700px;
   width: 100%;
-  border: 0px;
+  border: 0;
   position: relative;
 }
 
